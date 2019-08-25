@@ -95,3 +95,23 @@ jd_search_cmr.addEventListener('mouseover',function(){
 jd_search_cmr.addEventListener('mouseout',function(){
   this.src = 'images/camera.png';
 })
+// 搜索栏中提示热词
+var jd_search_ipt = document.querySelector('#jd_search_ipt');
+var hotsearch = ['网络机顶盒','费列罗巧克力','香奈儿香水','九阳豆浆机','8月电脑数码新品大赏 分千万京豆','海尔冰箱','台式机组装'];
+var hotscn = 0;
+var hotsrctimer = setInterval(function(){
+  jd_search_ipt.setAttribute("placeholder",hotsearch[hotscn]);
+  hotscn++;
+  hotscn = hotscn >= hotsearch.length ? 0 : hotscn;
+},5000)
+// 搜索栏下方热词循环播放
+var jd_hot_a = document.querySelector('#jd_hot_a');
+var hotci = ['秋尚新好物','用品狂欢购','食品中秋节'];
+var hothref = ['#1','#2','#3']
+var hotnum = 0;
+var hottimer = setInterval(function(){
+  jd_hot_a.innerHTML = hotci[hotnum];
+  jd_hot_a.href = hothref[hotnum];
+  hotnum++;
+  hotnum = hotnum >= hotci.length ? 0 : hotnum;
+},2000)
