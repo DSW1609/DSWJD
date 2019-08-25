@@ -62,3 +62,36 @@ address.addEventListener('mouseleave',function(){
   this.style.top = 0;
   addyc.style.display = "none";
 })
+// 京东logo触碰变换
+var jd_logo = document.querySelector('.jd_logo');
+var jd_logo_gif = document.querySelector('.jd_logo_gif');
+var jd_logo_img = document.querySelector('.jd_logo_img');
+var jd_lo_te = document.querySelectorAll('.jd_logo_te');
+jd_logo.addEventListener('mouseenter',function(){
+  this.style.background = "none";
+  jd_logo_gif.style.opacity = 1;
+  jd_logo_img.src = "images/jd_logogif.gif";
+  var jd_logo = setTimeout(function(){
+    for (var i = 0; i < jd_lo_te.length; i++) {
+      jd_lo_te[i].style.opacity = 1;
+    }
+  },2700);
+})
+jd_logo.addEventListener('mouseleave',function(){
+  var jd = setTimeout(function(){
+    jd_logo.style.background = "";
+    jd_logo_gif.style.opacity = "0";
+    jd_logo_img.src = "";
+      for (var i = 0; i < jd_lo_te.length; i++) {
+        jd_lo_te[i].style.opacity = 0;
+      }
+  },3500);
+})
+// 搜索栏相机图标变色
+var jd_search_cmr = document.querySelector('#jd_search_cmr');
+jd_search_cmr.addEventListener('mouseover',function(){
+  this.src = 'images/camerao.png';
+})
+jd_search_cmr.addEventListener('mouseout',function(){
+  this.src = 'images/camera.png';
+})
