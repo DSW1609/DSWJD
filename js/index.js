@@ -182,6 +182,8 @@ function jd_dsw_liyc(){
     jd_dsw_trt[i].style.display = "none";
   }
 }
+// 调用主轮播图播放函数
+lunbotuB('.peacediv','.leftjt','.rightjt',2);
 // 右侧京东登陆框下面快捷按钮触碰切换图片
 var jd_btn_imgth = document.querySelectorAll('.jd_btn_imgth');
 var jd_btn_a = document.querySelectorAll('.jd_btn_a');
@@ -197,13 +199,41 @@ for (var i = 0; i < jd_btn_imgth.length; i++) {
     jd_btn_a[data_jdbtn].style.color = "#666";
   })
 }
-// 向下滚动到x处，显示隐藏导航栏
+// 滚动事件：隐藏导航栏;右侧浮动快捷按钮导航栏
 var jd_yc_nav = document.querySelector('.jd_yc_nav');
+var jd_meun_r = document.querySelector('.jd_meun_r');
+var jd_meun_liz = document.querySelector('.jd_meun_liz');
 window.addEventListener('scroll',function(){
-  if(pageYOffset >= 150){
-    jd_yc_nav.style.top = 0+'px';
+  if(pageYOffset >= 620){
+    jd_yc_nav.style.top = 0 + 'px';
+    jd_meun_r.style.position = 'fixed';
+    jd_meun_liz.style.top = 0 + 'px';
+    jd_meun_r.style.top = 70 + 'px';
   }
   else{
     jd_yc_nav.style.top = -55 +'px';
+    jd_meun_r.style.position = 'absolute';
+    jd_meun_liz.style.top = -60 + 'px';
+    jd_meun_r.style.top = 510 + 'px';
   }
 })
+// 调用秒杀倒计时函数
+TimeDown("2019-8-27 24:00:00");
+// 京东秒杀多图调用小轮播图函数
+lunbotuS('.jd_spike_peace','.spike_peace_l','.spike_peace_r',5);
+// 京东秒杀右侧单图轮播图
+lunbotuB('.jd_spike_pcr','.jd_spike_pcrl','.jd_spike_pcrr',3);
+// 右侧浮动状态栏触碰切换图片效果
+var meun_logo = document.querySelectorAll('.meun_logo');
+var meun_logo_bg = document.querySelectorAll('.meun_logo_bg');
+var meun_logo_over = ['kefu','fankui','up'];
+for (var i = 0; i < meun_logo.length; i++) {
+  meun_logo[i].addEventListener('mouseover',function(){
+    var data_menu_logo = this.getAttribute('data-menu-logo');
+    meun_logo_bg[data_menu_logo].src = 'images/'+ meun_logo_over[data_menu_logo] +'o.png';
+  })
+  meun_logo[i].addEventListener('mouseout',function(){
+    var data_menu_logo = this.getAttribute('data-menu-logo');
+    meun_logo_bg[data_menu_logo].src = 'images/'+ meun_logo_over[data_menu_logo] +'.png';
+  })
+}
