@@ -1,8 +1,9 @@
 // 倒计时效果
-var spike_hours = document.querySelector('.spike_hours');
-var spike_minutes = document.querySelector('.spike_minutes');
-var spike_seconds = document.querySelector('.spike_seconds');
-function TimeDown(endDateStr) {
+function TimeDown(nhours,nminutes,nseconds,endDateStr) {
+  var nhours = document.querySelector(nhours);
+  var nminutes = document.querySelector(nminutes);
+  var nseconds = document.querySelector(nseconds);
+  nhours.timer = setInterval(function(){
     //结束时间
     var endDate = new Date(endDateStr);
     //当前时间
@@ -28,11 +29,8 @@ function TimeDown(endDateStr) {
       }
     }
     // 输出到页面
-    spike_hours.innerHTML = less10[0];
-    spike_minutes.innerHTML = less10[1];
-    spike_seconds.innerHTML = less10[2];
-    //延迟一秒执行自己
-    setTimeout(function () {
-        TimeDown(endDateStr);
-    }, 1000)
+    nhours.innerHTML = less10[0];
+    nminutes.innerHTML = less10[1];
+    nseconds.innerHTML = less10[2];
+  },1000)
 }

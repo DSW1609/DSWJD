@@ -64,8 +64,8 @@
             <div class="select_city"><a href="javascript:;">河南</a></div>
             <div class="select_city"><a href="javascript:;">辽宁</a></div>
             <div class="select_city"><a href="javascript:;">吉林</a></div>
-            <div class="select_city"><a href="javascript:;">黑龙江</a></div>
-            <div class="select_city"><a href="javascript:;">内蒙古</a></div>
+            <div class="select_city"><a href="javascript:;" data-city="0">黑龙江</a></div>
+            <div class="select_city"><a href="javascript:;" data-city="0">内蒙古</a></div>
             <div class="select_city"><a href="javascript:;">江苏</a></div>
             <div class="select_city"><a href="javascript:;" class="city_red">山东</a></div>
             <div class="select_city"><a href="javascript:;">安徽</a></div>
@@ -88,7 +88,7 @@
             <div class="select_city"><a href="javascript:;">新疆</a></div>
             <div class="select_city"><a href="javascript:;">港澳</a></div>
             <div class="select_city"><a href="javascript:;">台湾</a></div>
-            <div class="select_city"><a href="javascript:;">钓鱼岛</a></div>
+            <div class="select_city"><a href="javascript:;" data-city="0">钓鱼岛</a></div>
             <div class="select_city"><a href="javascript:;">海外</a></div>
           </div>
           <!-- 地区专享版本 -->
@@ -5327,43 +5327,645 @@
         </ol>
       </div>
       <!-- 右侧单图轮播图结束 -->
+      <!-- 右侧浮动快捷菜单 -->
+      <div class="jd_menu_r">
+        <ul>
+          <li class="jd_menu_li menu_top" data-top="0">
+            <span>京东<br>秒杀</span>
+          </li>
+          <li class="jd_menu_li menu_top" data-top="1">
+            <span>特色<br>优选</span>
+          </li>
+          <li class="jd_menu_li menu_top" data-top="2">
+            <span>频道<br>广场</span>
+          </li>
+          <li class="jd_menu_li menu_top" data-top="3">
+            <span>为你<br>推荐</span>
+          </li>
+          <li class="jd_menu_li menu_logo" data-menu-logo="0">
+            <span class="jd_menu_logo">
+              <img class="menu_logo_bg" src="images/kefu.png" alt="">
+            </span><br>
+            <span>客服</span>
+          </li>
+          <li class="jd_menu_li menu_logo" data-menu-logo="1">
+            <span class="jd_menu_logo">
+              <img class="menu_logo_bg" src="images/fankui.png" alt="">
+            </span><br>
+            <span>反馈</span>
+          </li>
+          <li class="jd_menu_liz menu_logo menu_top" data-menu-logo="2" data-top="4">
+            <span class="jd_menu_logo">
+              <img class="menu_logo_bg" src="images/up.png" alt="">
+            </span><br>
+            <span>顶部</span>
+          </li>
+        </ul>
+      </div>
+      <!-- 右侧浮动快捷菜单结束 -->
     </div>
     <!-- 京东秒杀部分结束 -->
-    <!-- 右侧浮动快捷菜单 -->
-    <div class="jd_meun_r">
-      <ul>
-        <li class="jd_meun_li">
-          <span>京东<br>秒杀</span>
-        </li>
-        <li class="jd_meun_li">
-          <span>特色<br>优选</span>
-        </li>
-        <li class="jd_meun_li">
-          <span>频道<br>广场</span>
-        </li>
-        <li class="jd_meun_li">
-          <span>为你<br>推荐</span>
-        </li>
-        <li class="jd_meun_li meun_logo" data-menu-logo="0">
-          <span class="jd_meun_logo">
-            <img class="meun_logo_bg" src="images/kefu.png" alt="">
-          </span><br>
-          <span>客服</span>
-        </li>
-        <li class="jd_meun_li meun_logo" data-menu-logo="1">
-          <span class="jd_meun_logo">
-            <img class="meun_logo_bg" src="images/fankui.png" alt="">
-          </span><br>
-          <span>反馈</span>
-        </li>
-        <li class="jd_meun_liz meun_logo" data-menu-logo="2">
-          <span class="jd_meun_logo">
-            <img class="meun_logo_bg" src="images/up.png" alt="">
-          </span><br>
-          <span>顶部</span>
-        </li>
-      </ul>
+    <!-- 特色优选部分开始 -->
+    <div class="jd_spec">
+      <!-- 左侧排行榜开始 -->
+      <div class="jd_spec_l">
+        <!-- 标题和导航栏 -->
+        <div class="jd_spec_ltop">
+          <!-- 左侧标题 -->
+          <div class="jd_spec_ltit">
+            <span>排行榜</span>
+            <div class="jd_spec_limg">
+              <img class="spec_img_r" src="images/spec_r.png" alt="">
+            </div>
+          </div>
+          <!-- 右侧多个li标题 -->
+          <div class="jd_spec_rli">
+            <ul>
+              <li><a href="javascript:;" class="spec_red" data-spec="0">装修服务</a></li>
+              <li><a href="javascript:;" data-spec="1">装饰材料</a></li>
+              <li><a href="javascript:;" data-spec="2">墙地面材料</a></li>
+              <li><a href="javascript:;" data-spec="3">电工电料</a></li>
+              <li><a href="javascript:;" data-spec="4">五金工具</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 下方详细展示 -->
+        <div class="jd_spec_lbtm" style="display:block;">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l">
+            <!-- 左侧上半部分 -->
+            <div class="spec_lbtm_ltop">
+              <!-- 左上角logo -->
+              <div class="spec_lbtm_lo">
+                <img src="images/hot1.png" alt="">
+              </div>
+              <!-- 中间展示图片 -->
+              <div class="spec_lbtm_ci">
+                <img src="images/hotci1.webp" alt="">
+              </div>
+              <!-- 图片下方文字 -->
+              <div class="spec_lbtm_te">
+                <span>
+                  梵客装修设计效果图公司 全包半包装修 新房老房北欧简约施工北京直营 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_lbtm_b">
+              <div class="spec_btone spec_1">
+                <span>好物榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_2">
+                <span>折扣榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_3">
+                <span>店铺榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_4">
+                <span>热搜榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r">
+            <!-- 右侧单条展示 -->
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot2.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot2bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客 住宅施工 半包装修 全国互联网装修设计公司家装施工新房老房改造京东装修服务 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot3.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot3bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客家装 全包半包房屋简单装修设计效果图公司 室内设计整体家装套餐别墅新二手老旧房屋改造翻新北京市 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot4.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot4bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  新洲北京装修公司半全包套餐别墅大宅新老旧房屋翻新改造施工 朝阳区
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jd_spec_lbtm">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l">
+            <!-- 左侧上半部分 -->
+            <div class="spec_lbtm_ltop">
+              <!-- 左上角logo -->
+              <div class="spec_lbtm_lo">
+                <img src="images/hot1.png" alt="">
+              </div>
+              <!-- 中间展示图片 -->
+              <div class="spec_lbtm_ci">
+                <img src="images/hotci2.webp" alt="">
+              </div>
+              <!-- 图片下方文字 -->
+              <div class="spec_lbtm_te">
+                <span>
+                  梵客装修设计效果图公司 全包半包装修 新房老房北欧简约施工北京直营 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_lbtm_b">
+              <div class="spec_btone spec_1">
+                <span>好物榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_2">
+                <span>折扣榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_3">
+                <span>店铺榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_4">
+                <span>热搜榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r">
+            <!-- 右侧单条展示 -->
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot2.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot2-2bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客 住宅施工 半包装修 全国互联网装修设计公司家装施工新房老房改造京东装修服务 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot3.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot2-3bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客家装 全包半包房屋简单装修设计效果图公司 室内设计整体家装套餐别墅新二手老旧房屋改造翻新北京市 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot4.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot2-4bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  新洲北京装修公司半全包套餐别墅大宅新老旧房屋翻新改造施工 朝阳区
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jd_spec_lbtm">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l">
+            <!-- 左侧上半部分 -->
+            <div class="spec_lbtm_ltop">
+              <!-- 左上角logo -->
+              <div class="spec_lbtm_lo">
+                <img src="images/hot1.png" alt="">
+              </div>
+              <!-- 中间展示图片 -->
+              <div class="spec_lbtm_ci">
+                <img src="images/hotci3.webp" alt="">
+              </div>
+              <!-- 图片下方文字 -->
+              <div class="spec_lbtm_te">
+                <span>
+                  梵客装修设计效果图公司 全包半包装修 新房老房北欧简约施工北京直营 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_lbtm_b">
+              <div class="spec_btone spec_1">
+                <span>好物榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_2">
+                <span>折扣榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_3">
+                <span>店铺榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_4">
+                <span>热搜榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r">
+            <!-- 右侧单条展示 -->
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot2.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot3-2bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客 住宅施工 半包装修 全国互联网装修设计公司家装施工新房老房改造京东装修服务 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot3.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot3-3bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客家装 全包半包房屋简单装修设计效果图公司 室内设计整体家装套餐别墅新二手老旧房屋改造翻新北京市 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot4.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot3-4bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  新洲北京装修公司半全包套餐别墅大宅新老旧房屋翻新改造施工 朝阳区
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jd_spec_lbtm">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l">
+            <!-- 左侧上半部分 -->
+            <div class="spec_lbtm_ltop">
+              <!-- 左上角logo -->
+              <div class="spec_lbtm_lo">
+                <img src="images/hot1.png" alt="">
+              </div>
+              <!-- 中间展示图片 -->
+              <div class="spec_lbtm_ci">
+                <img src="images/hotci4.webp" alt="">
+              </div>
+              <!-- 图片下方文字 -->
+              <div class="spec_lbtm_te">
+                <span>
+                  梵客装修设计效果图公司 全包半包装修 新房老房北欧简约施工北京直营 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_lbtm_b">
+              <div class="spec_btone spec_1">
+                <span>好物榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_2">
+                <span>折扣榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_3">
+                <span>店铺榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_4">
+                <span>热搜榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r">
+            <!-- 右侧单条展示 -->
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot2.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot4-2bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客 住宅施工 半包装修 全国互联网装修设计公司家装施工新房老房改造京东装修服务 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot3.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot4-3bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客家装 全包半包房屋简单装修设计效果图公司 室内设计整体家装套餐别墅新二手老旧房屋改造翻新北京市 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot4.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot4-4bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  新洲北京装修公司半全包套餐别墅大宅新老旧房屋翻新改造施工 朝阳区
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jd_spec_lbtm">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l">
+            <!-- 左侧上半部分 -->
+            <div class="spec_lbtm_ltop">
+              <!-- 左上角logo -->
+              <div class="spec_lbtm_lo">
+                <img src="images/hot1.png" alt="">
+              </div>
+              <!-- 中间展示图片 -->
+              <div class="spec_lbtm_ci">
+                <img src="images/hotci5.webp" alt="">
+              </div>
+              <!-- 图片下方文字 -->
+              <div class="spec_lbtm_te">
+                <span>
+                  梵客装修设计效果图公司 全包半包装修 新房老房北欧简约施工北京直营 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_lbtm_b">
+              <div class="spec_btone spec_1">
+                <span>好物榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_2">
+                <span>折扣榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_3">
+                <span>店铺榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+              <div class="spec_btone spec_4">
+                <span>热搜榜</span>
+                <span class="spec_gt">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r">
+            <!-- 右侧单条展示 -->
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot2.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot5-2bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客 住宅施工 半包装修 全国互联网装修设计公司家装施工新房老房改造京东装修服务 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot3.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot5-3bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  梵客家装 全包半包房屋简单装修设计效果图公司 室内设计整体家装套餐别墅新二手老旧房屋改造翻新北京市 密云区
+                </span>
+              </div>
+            </div>
+            <div class="spec_r_one">
+              <!-- 左侧图标 -->
+              <div class="spec_r_logo">
+                <img src="images/hot4.png" alt="">
+              </div>
+              <!-- 中间商品图片 -->
+              <div class="spec_r_bg">
+                <img src="images/hot5-4bg.webp" alt="">
+              </div>
+              <!-- 右侧文字 -->
+              <div class="spec_r_te">
+                <span>
+                  新洲北京装修公司半全包套餐别墅大宅新老旧房屋翻新改造施工 朝阳区
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右侧闪购开始 -->
+      <div class="jd_spec_r">
+        <!-- 标题和导航栏 -->
+        <div class="jd_spec_ltop">
+          <!-- 左侧标题 -->
+          <div class="jd_spec_ltit jd_spec_rtit">
+            <span>品牌闪购</span>
+            <div class="jd_spec_limg">
+              <img class="spec_img_r" src="images/spec_r.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 下方详细展示 -->
+        <div class="jd_spec_rbtm">
+          <!-- 详细展示左侧  -->
+          <div class="spec_lbtm_l spec_rbtm_l">
+            <!-- toplogo -->
+            <div class="spec_rbtm_lo">
+              <img src="images/jd_huawei.png" alt="">
+            </div>
+            <!-- 标题 -->
+            <div class="spec_rbtm_tit">
+              <span class="rbtm_tit_b">华为手机专场</span><br>
+              <span class="rbtm_tit_s">全场最高直降512元
+                <span class="rbtm_tit_ss">|</span>
+                仅剩
+              </span>
+              <a class="rbtm_hours">10</a>
+              <a>:</a>
+              <a class="rbtm_minutes">10</a>
+              <a>:</a>
+              <a class="rbtm_seconds">10</a>
+            </div>
+            <!-- 下方图片 -->
+            <div class="jd_hw_bt">
+              <img src="images/jd_huawei_bt.png" alt="">
+            </div>
+          </div>
+          <!-- 详细展示右侧 -->
+          <div class="spec_lbtm_r spec_rbtm_r">
+            <!-- 一行 -->
+            <div class="spec_rbtm_one">
+              <!-- 左 -->
+              <div class="spec_rbtm_onel">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_puma.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>彪马大牌闪购</span>
+                </div>
+              </div>
+              <div class="spec_rbtm_oner">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_olivoila.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>欧丽薇兰大牌闪购</span>
+                </div>
+              </div>
+            </div>
+            <div class="spec_rbtm_one">
+              <!-- 左 -->
+              <div class="spec_rbtm_onel">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_loreal.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>欧莱雅闪购专场</span>
+                </div>
+              </div>
+              <div class="spec_rbtm_oner">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_lenovo.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>联想手机专场</span>
+                </div>
+              </div>
+            </div>
+            <div class="spec_rbtm_one">
+              <!-- 左 -->
+              <div class="spec_rbtm_onel">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_edifier.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>漫步者闪购专场</span>
+                </div>
+              </div>
+              <div class="spec_rbtm_oner">
+                <!-- 上面logo -->
+                <div class="spec_rbtm_onelt">
+                  <img src="images/jd_ssongshu.png" alt="">
+                </div>
+                <!-- 下面文字 -->
+                <div class="spec_rbtm_onelb">
+                  <span>中秋潮礼乐团员</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- 特色优选部分结束 -->
   </div>
   <!-- 主要内容暂未结束loading... -->
   <!-- 京东秒杀倒计时js -->

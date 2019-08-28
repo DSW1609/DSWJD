@@ -54,12 +54,30 @@ for (var i = 0; i < jd_ios.length; i++) {
 // 左上选择位置下拉菜单
 var address = document.querySelector('.select_address');
 var addyc = document.querySelector('.select_addyc');
+var address_a = document.querySelector('#address_a');
+var addyc_city = document.querySelector('.select_addyc_city').querySelectorAll('a');
 address.addEventListener('mouseenter',function(){
   this.classList.add("liover");
   this.style.left = "-1" + 'px';
   this.style.top = "-1" + 'px';
   addyc.style.display = "block";
 })
+for (var i = 0; i < addyc_city.length; i++) {
+  addyc_city[i].addEventListener('click',function(){
+    var data_city = this.getAttribute('data_city');
+    // 先清除所有的类名
+    for (var i = 0; i < addyc_city.length; i++) {
+      addyc_city[i].classList.remove('city_red');
+    }
+    // 给当前点击的添加类名
+    this.classList.add("city_red");
+    var data_city = this.getAttribute("data-city");
+    // 如果data-city等于0,宽度设为60;
+    address.style.width = data_city == 0 ? 60+'px' : 50+'px';
+    // 把当前点击额值赋给导航栏
+    address_a.innerHTML = this.innerHTML;
+  })
+}
 address.addEventListener('mouseleave',function(){
   this.classList.remove("liover");
   this.style.left = 0;
@@ -201,39 +219,68 @@ for (var i = 0; i < jd_btn_imgth.length; i++) {
 }
 // 滚动事件：隐藏导航栏;右侧浮动快捷按钮导航栏
 var jd_yc_nav = document.querySelector('.jd_yc_nav');
-var jd_meun_r = document.querySelector('.jd_meun_r');
-var jd_meun_liz = document.querySelector('.jd_meun_liz');
+var jd_menu_r = document.querySelector('.jd_menu_r');
+var jd_menu_liz = document.querySelector('.jd_menu_liz');
 window.addEventListener('scroll',function(){
   if(pageYOffset >= 620){
     jd_yc_nav.style.top = 0 + 'px';
-    jd_meun_r.style.position = 'fixed';
-    jd_meun_liz.style.top = 0 + 'px';
-    jd_meun_r.style.top = 70 + 'px';
+    jd_menu_r.style.position = 'fixed';
+    jd_menu_liz.style.top = 0 + 'px';
+    jd_menu_r.style.top = 80 + 'px';
   }
   else{
     jd_yc_nav.style.top = -55 +'px';
-    jd_meun_r.style.position = 'absolute';
-    jd_meun_liz.style.top = -60 + 'px';
-    jd_meun_r.style.top = 510 + 'px';
+    jd_menu_r.style.position = 'absolute';
+    jd_menu_liz.style.top = -60 + 'px';
+    jd_menu_r.style.top = 0 + 'px';
   }
 })
+// 点击按钮回到设定位置
+var menu_sll = [600,700,800,900,0];
+var menu_top = document.querySelectorAll('.menu_top');
+for (var i = 0; i < menu_top.length; i++) {
+  menu_top[i].addEventListener('click',function(){
+    var data_top = this.getAttribute('data-top');
+    relaxTop(menu_sll[data_top]);
+  })
+}
 // 调用秒杀倒计时函数
-TimeDown("2019-8-27 24:00:00");
+TimeDown('.spike_hours','.spike_minutes','.spike_seconds','2019-8-28 24:00:00');
 // 京东秒杀多图调用小轮播图函数
 lunbotuS('.jd_spike_peace','.spike_peace_l','.spike_peace_r',5);
 // 京东秒杀右侧单图轮播图
 lunbotuB('.jd_spike_pcr','.jd_spike_pcrl','.jd_spike_pcrr',3);
 // 右侧浮动状态栏触碰切换图片效果
-var meun_logo = document.querySelectorAll('.meun_logo');
-var meun_logo_bg = document.querySelectorAll('.meun_logo_bg');
-var meun_logo_over = ['kefu','fankui','up'];
-for (var i = 0; i < meun_logo.length; i++) {
-  meun_logo[i].addEventListener('mouseover',function(){
+var menu_logo = document.querySelectorAll('.menu_logo');
+var menu_logo_bg = document.querySelectorAll('.menu_logo_bg');
+var menu_logo_over = ['kefu','fankui','up'];
+for (var i = 0; i < menu_logo.length; i++) {
+  menu_logo[i].addEventListener('mouseover',function(){
     var data_menu_logo = this.getAttribute('data-menu-logo');
-    meun_logo_bg[data_menu_logo].src = 'images/'+ meun_logo_over[data_menu_logo] +'o.png';
+    menu_logo_bg[data_menu_logo].src = 'images/'+ menu_logo_over[data_menu_logo] +'o.png';
   })
-  meun_logo[i].addEventListener('mouseout',function(){
+  menu_logo[i].addEventListener('mouseout',function(){
     var data_menu_logo = this.getAttribute('data-menu-logo');
-    meun_logo_bg[data_menu_logo].src = 'images/'+ meun_logo_over[data_menu_logo] +'.png';
+    menu_logo_bg[data_menu_logo].src = 'images/'+ menu_logo_over[data_menu_logo] +'.png';
   })
 }
+// 特色优选排行榜选项卡切换效果
+var jd_spec_rli = document.querySelector('.jd_spec_rli').querySelectorAll('a');
+var jd_spec_lbtm = document.querySelectorAll('.jd_spec_lbtm');
+for (var i = 0; i < jd_spec_rli.length; i++) {
+  jd_spec_rli[i].addEventListener('mouseover',function(){
+    // 先全部隐藏 清除所有a的类名
+    for (var i = 0; i < jd_spec_rli.length; i++) {
+      jd_spec_rli[i].classList.remove("spec_red");
+    }
+    for (var i = 0; i < jd_spec_lbtm.length; i++) {
+      jd_spec_lbtm[i].style.display = "none";
+    }
+    // 得到当前触碰的元素的自定义属性
+    var data_spec = this.getAttribute('data-spec');
+    this.classList.add('spec_red');
+    jd_spec_lbtm[data_spec].style.display = "block";
+  })
+}
+// 品牌闪购调用倒计时效果
+TimeDown('.rbtm_hours','.rbtm_minutes','.rbtm_seconds','2019-8-28 24:00:00');
