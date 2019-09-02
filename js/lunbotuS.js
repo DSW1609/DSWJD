@@ -8,6 +8,18 @@ function lunbotuS(peace,arrow_l,arrow_r,time){
   var arrow_l = document.querySelector(arrow_l);
   // 获取右侧箭头
   var arrow_r = document.querySelector(arrow_r);
+  peace.addEventListener('mouseenter',function(){
+    // 鼠标移入同时清除定时器
+    clearInterval(peacetimer);
+    peacetimer = null;
+  });
+  peace.addEventListener('mouseleave',function(){
+    // 鼠标移出重新启用定时器，图片继续自动滚动
+    peacetimer = setInterval(function(){
+      // 手动调用右侧箭头的点击事件
+      arrow_r.click();
+    },time * 1000);
+  });
   // 点击右侧箭头无缝滚动事件
   // 首先利用节点操作克隆第一个li放到ul的最后
   // 获取ul

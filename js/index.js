@@ -245,7 +245,7 @@ for (var i = 0; i < menu_top.length; i++) {
   })
 }
 // 调用秒杀倒计时函数
-TimeDown('.spike_hours','.spike_minutes','.spike_seconds','2019-8-28 24:00:00');
+TimeDown('.spike_hours','.spike_minutes','.spike_seconds','2019-8-29 24:00:00');
 // 京东秒杀多图调用小轮播图函数
 lunbotuS('.jd_spike_peace','.spike_peace_l','.spike_peace_r',5);
 // 京东秒杀右侧单图轮播图
@@ -283,4 +283,9 @@ for (var i = 0; i < jd_spec_rli.length; i++) {
   })
 }
 // 品牌闪购调用倒计时效果
-TimeDown('.rbtm_hours','.rbtm_minutes','.rbtm_seconds','2019-8-28 24:00:00');
+TimeDown('.rbtm_hours','.rbtm_minutes','.rbtm_seconds','2019-8-29 24:00:00');
+// 发现好货调用匀速轮播图函数
+$(function(){
+$('.jd_find_r').liMarquee();
+});
+lunbotuB('.jd_fc_pc','.jd_fc_pcrl','.jd_fc_pcrr',3);

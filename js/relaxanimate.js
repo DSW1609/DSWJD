@@ -41,3 +41,18 @@ function relaxTop(target, callback){
     window.scroll(0, window.pageYOffset + step)
   },15);
 }
+// 匀速播放动画
+function relaxys(obj, target, callback){
+  // 先清除以前的定时器，只保留一个定时器执行，防止多次点击发生冲突
+  clearInterval(obj.timer);
+  obj.timer = setInterval(function() {
+    if(obj.offsetLeft <= target){
+      // 停止动画，本质是停止定时器
+      clearInterval(obj.timer);
+      // 回调函数写到定时器结束里面
+      // 如果有callback参数传进来就调用
+      callback && callback();
+    }
+    obj.style.left = obj.offsetLeft - 1 + 'px';
+  },20);
+}

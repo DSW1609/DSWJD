@@ -1132,6 +1132,7 @@ li{
   padding-right: 30px;
   padding-bottom: 30px;
   border-right: 1px solid #eee;
+  border-image: linear-gradient(white, #eee, white)2 8 2;
 }
 .spike_peace_te{
   position: relative;
@@ -1158,7 +1159,7 @@ li{
   height: 20px;
   top:15px;
   line-height: 20px;
-  max-width: 100%;
+  max-width: 95%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1406,6 +1407,10 @@ li{
   font-size: 23px;
   color: black;
   font-weight: bold;
+}
+.jd_spec_ltit:hover{
+  transition: 0.1s;
+  color: #d81f07;
 }
 .jd_spec_limg{
   position: relative;
@@ -1672,6 +1677,7 @@ li{
 }
 .spec_rbtm_onel{
   border-right: 1px solid #eee;
+  border-image: linear-gradient(white , #eeee, white)2 8 2;
 }
 .spec_rbtm_oner{
   float: right;
@@ -1685,9 +1691,9 @@ li{
 }
 .spec_rbtm_onelb{
   position: relative;
-  width: 100px;
+  width: 110px;
   height: 20px;
-  top:8px;
+  top:12px;
   font-size: 13px;
   color: #333;
   text-align: center;
@@ -1696,4 +1702,447 @@ li{
 .spec_rbtm_one img{
   width: 100px;
   height: 50px;
+}
+.jd_find{
+  position: relative;
+  width: 1190px;
+  height: 260px;
+  margin: 0 auto;
+  top:50px;
+}
+.jd_find_l{
+  position: relative;
+  width: 190px;
+  height: 100%;
+  float: left;
+  background-image: url(../images/jd_find.png);
+  background-repeat: no-repeat;
+}
+.jd_find_tit{
+  position: relative;
+  width: 160px;
+  height: 90px;
+  margin: 0 auto;
+  top:18px;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  border-bottom-right-radius: 33px;
+  background: rgba(0,0,0,.7);
+}
+.jd_find_tits{
+  position: relative;
+  width: 120px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: left;
+  color: #eee;
+  top:-15px;
+}
+.jd_find_titsi{
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  top:17px;
+  right: 10px;
+}
+.jd_find_titsi img{
+  width: 20px;
+}
+.jd_find_r{
+  position: relative;
+  float: right;
+  width: 990px;
+  height: 260px;
+  overflow: hidden;
+  background: #fff;
+}
+.jd_find_li{
+  position: relative;
+  float: left;
+  width: 198px;
+  height: 240px;
+  top:10px;
+  color: #333;
+}
+.jd_find_li:hover{
+  opacity: 0.8;
+  transition: 0.2s;
+  color: red;
+}
+.jd_find_r ul{
+  position: relative;
+  width: 1980px;
+  height: 260px;
+  left: 0px;
+}
+.jd_find_liit{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top:15px;
+  margin: 0 auto;
+}
+.jd_find_lb{
+  width: 150px;
+}
+.jd_find_litt{
+  position: relative;
+  width: 170px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  top:30px;
+  margin: 0 auto;
+}
+.jd_find_liib{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top:60px;
+  margin: 0 auto;
+}
+.jd_find_litb{
+  position: relative;
+  width: 170px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  top:45px;
+  margin: 0 auto;
+}
+.jd_core{
+  position: relative;
+  width: 1190px;
+  height: 340px;
+  margin: 0 auto;
+  top:70px;
+}
+.jd_core_box{
+  position: absolute;
+  width: 290px;
+  height: 340px;
+  background: #fff;
+}
+.core_box1{
+  background-image: url(../images/jd_core_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.core_box2{
+  left: 300px;
+}
+.core_box3{
+  left:600px;
+}
+.core_box4{
+  left:900px;
+}
+.jd_core_tit{
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 40px;
+  left: 20px;
+  top:5px;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 23px;
+  color: black;
+  font-weight: bold;
+}
+.cores_tit{
+  width: 98px;
+}
+.core2_tit{
+  width: 75px;
+}
+.jd_core_tit:hover{
+  transition: 0.1s;
+  color: #d81f07;
+}
+.jd_spec_limg{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: right;
+  line-height: 45px;
+}
+.jd_core_couponlist{
+  position:relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  top:50px;
+}
+.jd_core_coupon{
+  position: relative;
+  width: 100%;
+  height: 72px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+.jd_coupon_lim{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top:4px;
+  left: 2px;
+  background: #fff;
+  border-radius: 50%;
+}
+.jd_coupon_lim img{
+  position: relative;
+  margin: 0 auto;
+  width: 50px;
+  left: 7px;
+  top:7px;
+  border-radius: 50%;
+}
+.jd_coupon_price{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 75px;
+  top:5px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #e33333;
+  line-height: 30px;
+}
+.jd_coupon_price i{
+  font-style: normal;
+  font-size: 15px;
+}
+.jd_coupon_price span{
+  font-family: impact, sans-serif;
+}
+.jd_core_pmj{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 75px;
+  top:35px;
+  font-size: 12px;
+  color: #999999;
+}
+.jd_core_pxz{
+  position: absolute;
+  width: 130px;
+  height: 20px;
+  left: 75px;
+  top:53px;
+  font-size: 12px;
+  color: #333333;
+  max-width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jd_core_more{
+  position: relative;
+  float: right;
+  width: 15px;
+  height: 60px;
+  top:10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  color: #666;
+  right: 13px;
+}
+.core_m{
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 100%;
+  padding-right: 30px;
+  background-image: url(../images/jd_r.png);
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.core_m:hover{
+  color: #e33333;
+  cursor: pointer;
+  background-image: url(../images/jd_ro.png);
+}
+.jd_hd_one{
+  position: relative;
+  width: 260px;
+  height: 128px;
+  background: #f4f1ef;
+  margin: 0 auto;
+  top:50px;
+  margin-top: 10px;
+}
+.jd_hd_one:hover{
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.jd_hd_one2{
+  background: #f1f5f0;
+}
+.jd_hd_tit{
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  left: 15px;
+  top:10px;
+  font-size: 15px;
+  color: #333;
+  letter-spacing: 0.2px;
+}
+.jd_hd_zy{
+  position: absolute;
+  left: 15px;
+  top:55px;
+  width: 30px;
+  height: 16px;
+  line-height: 16px;
+  color: #e33333;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #e33333;
+}
+.jd_hd_3c{
+  width: 45px;
+  left: 52px;
+  color: #596fab;
+  border: 1px solid #596fab;
+}
+.jd_hd_sd{
+  width: 52px;
+  left: 52px;
+  color: #596fab;
+  border: 1px solid #596fab;
+}
+.jd_hd_gz{
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 15px;
+  top:95px;
+  font-size: 12px;
+  color: #999;
+}
+.jd_hd_gzte{
+  position: relative;
+  left: -3px;
+}
+.jd_hd_im{
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  right:10px;
+  top:14px;
+}
+.jd_hd_im img{
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top:5px;
+  left: 5px;
+}
+.jd_fc_pc{
+  position: relative;
+  width: 260px;
+  height: 280px;
+  top:10px;
+  left: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.jd_fc_pc:hover{
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.jd_fc_pc ul li{
+  float: left;
+  list-style-type: none;
+}
+.jd_fc_pc ul{
+  position: absolute;
+  width: 800px;
+  height: 173px;
+  left: 0px;
+  top:0;
+}
+.jd_fc_pcrl,
+.jd_fc_pcrr{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top:70px;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.jd_fc_pcrr{
+  right: 20px;
+}
+.jd_fc_pcrl img,
+.jd_fc_pcrr img{
+  width: 40px;
+}
+.jd_fc_te{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+}
+.jd_fc_lb{
+  position: relative;
+  width: 260px;
+  height: 173px;
+}
+.jd_fc_pc ol{
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  z-index: 999;
+  top:260px;
+  left: 55%;
+}
+.jd_fc_pc ol li{
+  float: left;
+  width: 10px;
+  font-size: 13px;
+  color: #999999;
+  cursor: pointer;
+  list-style-type: circle;
+}
+.jd_fc_tetit{
+  position: relative;
+  width: 260px;
+  height: 30px;
+  max-width: 95%;
+  font-size: 15px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jd_fc_au{
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+}
+.jd_fc_autx{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.jd_fc_autx img{
+  width: 
 }
