@@ -236,7 +236,7 @@ window.addEventListener('scroll',function(){
   }
 })
 // 点击按钮回到设定位置
-var menu_sll = [600,700,800,900,0];
+var menu_sll = [600,840,1860,2700,0];
 var menu_top = document.querySelectorAll('.menu_top');
 for (var i = 0; i < menu_top.length; i++) {
   menu_top[i].addEventListener('click',function(){

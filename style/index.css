@@ -2673,6 +2673,11 @@ li {
   top: -5px;
 }
 
+.pd_itb:hover {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
 .jd_pd_items {
   position: relative;
   width: 290px;
@@ -2763,13 +2768,13 @@ li {
 
 .jd_fy_list li {
   position: relative;
-  display: inline-block;
+  float: left;
   width: 230px;
   height: 322px;
-  margin-left: 5px;
-  left: -5px;
+  margin-left: 10px;
+  left: -10px;
   margin-top: 10px;
-  top:-10px;
+  top: -10px;
 }
 
 .jd_fy_sh {
@@ -2779,6 +2784,135 @@ li {
   background: #fff;
 }
 
+.jd_fy_sh:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.jd_fy_shbg {
+  background-position: 0 0;
+  background-image: url(../images/fy_bg.png);
+}
+
+.fy_bg_im {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  top: 20px;
+}
+
+.fy_bg_im img {
+  width: 150px;
+}
+
+.fy_bg_te {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  left: 20px;
+  top: 40px;
+}
+
+.fy_bg_bq {
+  position: relative;
+  width: 60px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #247be9;
+  border: 1px solid #247be9;
+}
+
+.fy_bg_bt {
+  position: relative;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  color: #333;
+  top: 5px;
+  font-weight: bold;
+}
+
+.fy_bg_sl {
+  position: relative;
+  width: 66px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+  top: 8px;
+}
+
+.fy_bg_xb {
+  position: relative;
+  background-image: url(../images/jd_xb.png);
+  background-position: 0 0;
+  width: 69px;
+  height: 24px;
+  top: 15px;
+  line-height: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 26px;
+}
+
+.jd_fy_hot {
+  background-image: url(../images/fy_bg.png);
+  background-position: -460px 0;
+  width: 230px;
+  height: 322px;
+}
+.jd_fy_hot:hover{
+  opacity: 1;
+}
+.fy_hot_t{
+  position: relative;
+  width: 110px;
+  height: 34px;
+  background: red;
+  margin: 0 auto;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  top:20px;
+}
+.fy_hot_anlist{
+  position: relative;
+  width: 210px;
+  height: 200px;
+  margin: 0 auto;
+  top:45px;
+}
+.fy_hot_an{
+  position: relative;
+  display: inline-block;
+  width: 88px;
+  height: 36px;
+  border: 1px solid #f10214;
+  color: #f10214;
+  text-align: center;
+  line-height: 36px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 5px;
+  left: 5px;
+  margin-top: 10px;
+}
+.fy_hot_an:hover{
+  transition: 0.2s;
+  color: #fff;
+  background: #f10214;
+}
 .jd_fy_shim {
   position: relative;
   width: 150px;
@@ -2818,19 +2952,67 @@ li {
   text-align: center;
   border-radius: 2px;
 }
-.fy_shte_b{
+
+.fy_shte_b {
   position: relative;
   width: 100px;
   height: 30px;
-  top:7px;
+  top: 7px;
   color: #f10214;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
-.fy_shte_b i{
+
+.fy_shte_b i {
   position: relative;
-  top:-3px;
+  top: -3px;
   font-size: 13px;
   font-style: normal;
+}
+
+.fy_sh_bt {
+  position: absolute;
+  width: 100%;
+  height: 66px;
+  top: 240px;
+  transition: all 0.3s;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .8) 0, white 35%, white);
+}
+
+.fy_sh_bt:hover {
+  opacity: 1;
+}
+
+.fy_sh_an {
+  position: relative;
+  width: 105px;
+  height: 28px;
+  margin: 0 auto;
+  top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #333;
+  transition: 0.3s;
+  line-height: 28px;
+  padding-left: 15px;
+  border-radius: 15px;
+}
+
+.fy_sh_an:hover {
+  background-color: #f10214;
+}
+
+.fy_sh_ani {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: 28px;
+}
+
+.fy_sh_ani img {
+  width: 20px;
 }
