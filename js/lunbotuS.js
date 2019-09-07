@@ -2,8 +2,6 @@
 function lunbotuS(peace,arrow_l,arrow_r,time){
   // 获取外层大盒子
   var peace = document.querySelector(peace);
-  // 得到盒子的宽度
-  var spikeW = peace.offsetWidth;
   // 获取左侧箭头
   var arrow_l = document.querySelector(arrow_l);
   // 获取右侧箭头
@@ -26,6 +24,8 @@ function lunbotuS(peace,arrow_l,arrow_r,time){
   var peaceul = peace.querySelector('ul');
   // 获取其中的li
   var peaceli = peaceul.querySelectorAll('li');
+  // 得到盒子中li的宽度
+  var spikeW = peace.querySelector("li").offsetWidth;
   // 克隆第一个li到最后
   var peace_first_li = peaceul.children[0].cloneNode(true);
   peaceul.appendChild(peace_first_li);

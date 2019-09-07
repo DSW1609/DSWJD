@@ -34,7 +34,7 @@ function lunbotuB(obj,arrow_l,arrow_r,time){
         objolli[i].style.listStyleType= "";
       }
       // 点击谁把className添加到谁
-      this.style.listStyleType= "disc";;
+      this.style.listStyleType= "disc";
       var objindex = this.getAttribute("data-index");
       // 把index值赋给num,circle，使底部小圆圈指示位置和图片位置对应
       objnum = objcircle = objindex;
