@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>京东秒杀-正品保证、天天低价、限时限量</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style/miaosha.css">
+</head>
+
+<body>
+  <!-- 头部开始 -->
+  <div class="ms_header">
+    <!-- 头部居中内容开始 -->
+    <div class="ms_header_cen">
+      <!-- 左侧logo -->
+      <a href="index.html">
+        <div class="ms_header_logo"></div>
+      </a>
+      <!-- 中间搜索栏 -->
+      <div class="ms_header_search">
+        <!-- 左侧搜索输入框 -->
+        <div class="ms_header_search_i">
+          <input type="text" class="ms_header_search_in" placeholder="iPhone 13 Pro Max">
+        </div>
+        <!-- 右侧搜索按钮 -->
+        <div class="ms_header_search_b">
+          <span>搜索</span>
+        </div>
+      </div>
+      <!-- 下方热门搜索词 -->
+      <div class="ms_header_sctot">
+        <a href="javascript:;"><span>手机</span></a>
+        <a href="javascript:;"><span>电脑</span></a>
+        <a href="javascript:;"><span>鼠标</span></a>
+        <a href="javascript:;"><span>家电</span></a>
+        <a href="javascript:;"><span>酒水</span></a>
+      </div>
+      <!-- 右侧购物车 -->
+      <div class="jd_cart">
+        <img src="images/cart.png" alt="">
+        <a href="javascript:;">我的购物车</a>
+        <!-- 购物车右上角数字指示 -->
+        <span>0</span>
+      </div>
+      <!-- 下方导航栏 -->
+      <div class="ms_header_nav">
+        <!-- 单个导航按钮 -->
+        <div class="ms_header_nav_item" style="background: #e01222;">
+          <a href="javascript:;" style="color:#fff"><span>京东秒杀</span></a>
+        </div>
+        <!-- 单个导航按钮 -->
+        <div class="ms_header_nav_item">
+          <a href="javascript:;"><span>每日特价</span></a>
+        </div>
+        <!-- 单个导航按钮 -->
+        <div class="ms_header_nav_item">
+          <a href="javascript:;"><span>大牌闪购</span></a>
+        </div>
+        <!-- 单个导航按钮 -->
+        <div class="ms_header_nav_item">
+          <a href="javascript:;"><span>品类秒杀</span></a>
+        </div>
+        <!-- 右侧更多分类 -->
+        <div class="ms_header_more">
+          <span>更多分类</span>
+          <!-- 隐藏分类框 -->
+          <div class="ms_hd_yc">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 头部居中内容结束 -->
+  </div>
+  <!-- 头部结束 -->
+  <!-- 秒杀内容主体开始 -->
+  <div class="ms_body">
+    <!-- 秒杀内容居中内容开始 -->
+    <div class="ms_body_cen">
+      <!-- 顶部标题背景开始 -->
+      <div class="ms_cent_bg">
+        <!-- 平行四边形背景框 -->
+        <div class="ms_cent_px">
+        </div>
+        <div class="ms_cent_px ms_cent_pxs">
+        </div>
+        <div class="ms_cent_px ms_cent_pxs ms_cent_pxsy">
+        </div>
+        <div class="ms_cent_px ms_cent_pxs ms_cent_pxsys">
+        </div>
+        <div class="ms_cent_px ms_cent_pxy">
+        </div>
+        <!-- 居中图片 -->
+        <div class="ms_cen_i">
+          <img src="images/header_ms.png" alt="">
+        </div>
+      </div>
+      <!-- 顶部标题背景结束 -->
+      <!-- 下方秒杀内容开始 -->
+      <div class="ms_cent_bd">
+        <!-- 秒杀浮动导航栏开始 -->
+        <div class="ms_cent_nav">
+          <!-- 单个导航按钮 -->
+          <div class="ms_cent_item ms_cent_itemb">
+            <!-- 内部时间信息开始 -->
+            <div class="ms_nav_c">
+              <!-- 左侧秒杀时间 -->
+              <div class="ms_time_l">
+                <span>18:00</span>
+              </div>
+              <!-- 右侧秒杀倒计时 -->
+              <div class="ms_time_r">
+                <!-- 上方秒杀标题 -->
+                <span>正在秒杀</span>
+                <br>
+                <!-- 下方倒计时 -->
+                <span>结束</span>
+                <span id="cx_hours">01</span><span>:</span>
+                <span id="cx_minutes">01</span><span>:</span>
+                <span id="cx_seconds">01</span>
+              </div>
+            </div>
+            <!-- 内部时间信息结束 -->
+          </div>
+          <!-- 单个导航按钮 -->
+          <div class="ms_cent_item ms_cent_items">
+            <!-- 秒杀预告 -->
+            <div class="ms_cent_yg">
+              <!-- 左侧时间预告 -->
+              <div class="ms_time_ygl">
+                <span>20:00</span>
+              </div>
+              <!-- 右侧即将开始 -->
+              <div class="ms_time_ygr">
+                <span>即将开始</span>
+              </div>
+            </div>
+          </div>
+          <!-- 单个导航按钮 -->
+          <div class="ms_cent_item ms_cent_items">
+            <!-- 秒杀预告 -->
+            <div class="ms_cent_yg">
+              <!-- 左侧时间预告 -->
+              <div class="ms_time_ygl">
+                <span>21:00</span>
+              </div>
+              <!-- 右侧即将开始 -->
+              <div class="ms_time_ygr">
+                <span>即将开始</span>
+              </div>
+            </div>
+          </div>
+          <!-- 单个导航按钮 -->
+          <div class="ms_cent_item ms_cent_items">
+            <!-- 秒杀预告 -->
+            <div class="ms_cent_yg">
+              <!-- 左侧时间预告 -->
+              <div class="ms_time_ygl">
+                <span>22:00</span>
+              </div>
+              <!-- 右侧即将开始 -->
+              <div class="ms_time_ygr">
+                <span>即将开始</span>
+              </div>
+            </div>
+          </div>
+          <!-- 单个导航按钮 -->
+          <div class="ms_cent_item ms_cent_items">
+            <!-- 秒杀预告 -->
+            <div class="ms_cent_yg">
+              <!-- 左侧时间预告 -->
+              <div class="ms_time_ygl">
+                <span>23:00</span>
+              </div>
+              <!-- 右侧即将开始 -->
+              <div class="ms_time_ygr">
+                <span>即将开始</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 秒杀浮动导航栏结束 -->
+        <!-- 秒杀商品内容开始 -->
+        <div class="ms_cent_sp">
+          <!-- 单个商品开始 -->
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_item">
+            <a href="javascript:;">
+              <!-- 上方图片 -->
+              <div class="ms_sp_im">
+                <img src="images/ms_sp_01.jpg" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_sp_tit">
+                <span>【下单再减50】中兴A7 2GB+32GB</span>
+              </div>
+              <!-- 自营标签&到手价 -->
+              <div class="ms_sp_bq">
+                <!-- 左侧标签 -->
+                <div class="ms_sp_bql">
+                  <span>自营</span>
+                </div>
+                <!-- 右侧到手价 -->
+                <div class="ms_sp_bqr">
+                  <span>到手价499</span>
+                </div>
+              </div>
+            </a>
+            <!-- 分割线 -->
+            <div class="ms_sp_fg"></div>
+            <!-- 最低价 -->
+            <div class="sm_sp_zdj">
+              <span>135天历史最低价</span>
+            </div>
+            <!-- 价格 -->
+            <div class="sm_sp_prc">
+              <!-- 左侧价格 -->
+              <div class="sm_sp_prcl">
+                <i>￥</i><span>549</span>
+              </div>
+              <!-- 左侧划去价格 -->
+              <div class="sm_sp_prcl sm_sp_prcr">
+                <span><i>￥</i>599</span>
+              </div>
+            </div>
+            <!-- 已售 -->
+            <div class="sm_sp_ys">
+              <!-- 左侧文字 -->
+              <div class="sm_sp_tel">
+                <span>已售30%</span>
+              </div>
+              <!-- 右侧进度条 -->
+              <div class="sm_sp_jdt">
+                <!-- 内部进度条 -->
+                <div class="sm_sp_jdl">
+                </div>
+              </div>
+            </div>
+            <!-- 立即抢购 -->
+            <a href="javascript:;">
+              <div class="sm_sp_lj">
+                <span>立即抢购</span>
+              </div>
+            </a>
+          </div>
+          <div class="ms_sp_itemb">
+            <!-- 左上框 -->
+            <div class="ms_sp_ltk">
+              <!-- 上方logo -->
+              <div class="ms_sp_lg">
+                <img src="images/ms_sp_lg01.png" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_ltk_tit">
+                <span>万宝龙奢侈品专场</span>
+                <br>
+                <span class="ms_ltk_titf">全场最高直降1291元</span>
+              </div>
+            </div>
+            <!-- 下方框 -->
+            <div class="ms_sp_bk">
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_01.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥103</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥115</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_02.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥112</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥125</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_03.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥112</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥125</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms_sp_itemb ms_sp_itemb2">
+            <!-- 左上框 -->
+            <div class="ms_sp_ltk">
+              <!-- 上方logo -->
+              <div class="ms_sp_lg">
+                <img src="images/ms_sp_lg02.png" alt="">
+              </div>
+              <!-- 标题 -->
+              <div class="ms_ltk_tit">
+                <span>Apple手机专场</span>
+                <br>
+                <span class="ms_ltk_titf">全场最高直降1291元</span>
+              </div>
+            </div>
+            <!-- 下方框 -->
+            <div class="ms_sp_bk">
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_04.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥3999</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥4599</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_05.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥2638</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥3199</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 单个商品 -->
+              <div class="ms_bk_item">
+                <!-- 上方图片 -->
+                <div class="ms_bk_im">
+                  <img src="images/sm_bk_06.jpg" alt="">
+                </div>
+                <!-- 下方价格 -->
+                <div class="ms_bk_prc">
+                  <!-- 左侧价格 -->
+                  <div class="ms_bk_prcl">
+                    <span>￥2938</span>
+                  </div>
+                  <!-- 右侧价格 -->
+                  <div class="ms_bk_prcr">
+                    <span>￥3338</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 秒杀商品内容结束 -->
+      </div>
+      <!-- 下方秒杀内容结束 -->
+    </div>
+    <!-- 秒杀内容居中内容结束 -->
+  </div>
+  <!-- 秒杀内容主体结束 -->
+  <!-- 引入外部js -->
+  <script src="js/NoticeTime.js"></script>
+  <script src="js/miaosha.js"></script>
+</body>
+
+</html>
