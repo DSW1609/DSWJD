@@ -18,20 +18,17 @@ ms_hd_yc.addEventListener("mouseleave", function() {
   }, 300)
 })
 // 正在秒杀调用倒计时函数
-TimeDown("#cx_hours", "#cx_minutes", "#cx_seconds", "2019-9-18 24:00:00");
+TimeDown("#cx_hours", "#cx_minutes", "#cx_seconds", "2019-9-20 24:00:00");
 // 导航栏
-var ms_header_nav = document.querySelector(".ms_header_nav");
+var ms_header_navb = document.querySelector(".ms_header_navb");
 window.addEventListener('scroll', function() {
   if (pageYOffset >= 115) {
-    ms_header_nav.style.position = "fixed";
-    ms_header_nav.style.top = "0";
-    ms_header_nav.style.borderBottom = "2px solid #e01222";
-    ms_header_nav.style.boxShadow = "1px 1px 10px #666";
-  }
-  else{
-    ms_header_nav.style.position = "absolute";
-    ms_header_nav.style.top = "";
-    ms_header_nav.style.borderBottom = "0";
-    ms_header_nav.style.boxShadow = "";
+    ms_header_navb.style.position = "fixed";
+    ms_header_navb.style.top = "0";
+    ms_header_navb.style.boxShadow = "1px 1px 10px #666";
+  } else {
+    ms_header_navb.style.position = "absolute";
+    ms_header_navb.style.top = "115px";
+    ms_header_navb.style.boxShadow = "";
   }
 })
