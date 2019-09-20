@@ -1,7 +1,7 @@
 .lq_body {
   position: relative;
   width: 1190px;
-  height: 1000px;
+  height: 1920px;
   background: #fff;
   margin: 0 auto;
   top: 20px;
@@ -231,16 +231,17 @@
   font-weight: bold;
   font-size: 20px;
   top: 370px;
-  background-image: -webkit-linear-gradient(right, #FF416C, #FF4B2B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .lq_tj_list {
   position: absolute;
   width: 1250px;
-  height: 1000px;
+  height: 680px;
   top: 450px;
+}
+
+.lq_plus_list {
+  top: 1200px;
 }
 
 .lq_tj_item {
@@ -253,13 +254,18 @@
   margin-left: 25px;
   left: -25px;
   margin-top: 25px;
-  top:-25px;
+  top: -25px;
   background: url(../images/jd_lq.png);
   background-size: 280px 147px;
   background-repeat: no-repeat;
   background-position: right;
+  transition: 0.2s;
+  cursor: pointer;
 }
-
+.lq_tj_item:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 3px #f6f6f6;
+}
 .tj_item_bg {
   position: relative;
   float: left;
@@ -317,4 +323,35 @@
 
 .tj_item_lq:hover {
   font-weight: bold;
+}
+
+.lq_for_plus {
+  top: 1120px;
+}
+
+.plus_item_s {
+  width: 152px;
+  height: 40px;
+  overflow: hidden;
+  left: 146px;
+}
+
+.lq_plus_tb {
+  position: relative;
+  float: left;
+  width: 38px;
+  height: 16px;
+  display: block;
+  background: red;
+  background: linear-gradient(#5d5c5b, #6b6b6a, #5d5c5b);
+  font-size: 12px;
+  color: #fff38d;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+  top: 1px;
+}
+
+.plus_item_lq {
+  color: #fff38d;
 }
