@@ -18,7 +18,7 @@ ms_hd_yc.addEventListener("mouseleave", function() {
   }, 300)
 })
 // 正在秒杀调用倒计时函数
-TimeDown("#cx_hours", "#cx_minutes", "#cx_seconds", "2019-9-20 24:00:00");
+TimeDown("#cx_hours", "#cx_minutes", "#cx_seconds", "2019-9-26 24:00:00");
 // 导航栏
 var ms_header_navb = document.querySelector(".ms_header_navb");
 window.addEventListener('scroll', function() {
