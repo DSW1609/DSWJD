@@ -107,24 +107,23 @@
 
 .show_nav_ul {
   position: relative;
-  width: 1130px;
+  width: 1100px;
   height: 40px;
   margin: 0 auto;
-  line-height: 40px;
-  letter-spacing: 0.5px;
 }
 
 .show_nav_ul li {
   float: left;
 }
 
-.show_nav_ul a {
+.show_nav_ul li>a {
   color: #fff;
   font-size: 16px;
   padding: 0 15px;
+  line-height: 40px;
 }
 
-.show_nav_ul a:hover {
+.show_nav_ul li>a:hover {
   color: #999;
 }
 
@@ -136,6 +135,76 @@
   background: rgba(255, 255, 255, .9);
   z-index: 999;
   display: none;
+}
+
+.show_nav_ce {
+  position: relative;
+  height: 200px;
+  margin: 0 auto;
+  left: -70px;
+}
+
+.show_nav_ce1 {
+  width: 800px;
+}
+
+.show_nav_ce2 {
+  width: 1200px;
+}
+
+.show_nav_ce3 {
+  width: 1320px;
+  left: -50px;
+}
+
+.show_nav_ce4 {
+  width: 400px;
+}
+
+.show_nav_ce5 {
+  width: 550px;
+}
+
+.show_nav_ce6 {
+  width: 1100px;
+}
+
+.show_1 {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 100px;
+  top: 30px;
+  margin-left: 12px;
+  text-align: center;
+  color: #333;
+}
+
+.show_1:hover {
+  color: #485aff;
+}
+
+.show_1 img {
+  width: 120px;
+}
+
+.nav_hh {
+  top: -12px !important;
+}
+
+.nav_hh2 {
+  top: -14px !important;
+}
+
+.mac_new {
+  color: #e22929;
+  top: -10px !important;
+}
+
+.show_1 span {
+  position: relative;
+  font-size: 12px;
+  top: -7px;
 }
 
 .jd_show_add {
@@ -151,4 +220,76 @@
   height: 44px;
   margin: 0 auto;
   line-height: 44px;
+  font-size: 13px;
+}
+
+.show_add_l {
+  position: absolute;
+  width: 500px;
+  height: 44px;
+}
+
+.show_add_ce a,
+.show_add_ce i {
+  color: #333;
+  padding: 0 8px;
+  font-style: normal;
+}
+
+.show_add_ce a:hover {
+  color: #c81623;
+}
+
+.show_add_l span {
+  color: #333;
+  font-weight: 200;
+}
+
+.show_add_r {
+  position: absolute;
+  width: 400px;
+  height: 44px;
+  left: 790px;
+}
+
+.jd_zy_bq {
+  position: absolute;
+  height: 14px;
+  padding: 1px;
+  line-height: 14px;
+  color: #fff;
+  background: #e4393c;
+  cursor: pointer;
+  top: 15px;
+}
+
+.jd_add_dpm {
+  position: absolute;
+  left: 30px;
+}
+
+.jd_add_kf {
+  position: absolute;
+  width: 150px;
+  height: 16px;
+  left: 220px;
+}
+
+.jd_add_kf i {
+  position: absolute;
+  height: 16px;
+  top: 15px;
+  left: -13px;
+  background-image: url(../images/jd_jl.png);
+  background-position: -34px -16px;
+  background-repeat: no-repeat;
+}
+
+.jd_add_dp {
+  left: 308px;
+}
+
+.jd_add_dp i {
+  top: 14px;
+  background-position: -34px 0;
 }
