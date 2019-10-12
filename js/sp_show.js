@@ -76,3 +76,65 @@ for (let i = 0; i < show_nav_li.length; i++) {
     }
   })
 }
+// 触碰放大商品
+// 获得左侧商品图片的div
+var jd_sp_im = document.querySelector('.jd_sp_im');
+// 获得遮罩层的div
+var mask = document.querySelector('.mask');
+// 获得右侧弹出的div
+var jd_sp_big = document.querySelector('.jd_sp_big');
+// 获得右侧弹出div内图片
+var jd_sp_big_im = document.querySelector('.jd_sp_big img');
+var jd_show = document.querySelector(".jd_show");
+var jd_dsw = document.querySelector(".jd_dsw");
+
+jd_sp_im.addEventListener('mouseover', function () {
+  mask.style.display = "block";
+  jd_sp_big.style.display = "block";
+})
+jd_sp_im.addEventListener('mouseout', function () {
+  mask.style.display = "none";
+  jd_sp_big.style.display = "none";
+})
+jd_sp_im.addEventListener('mousemove', function (e) {
+  //先计算出鼠标在盒子内的坐标
+  var X = e.pageX - jd_show.offsetLeft;
+  // 因为当前div有两层父元素，直接用div.offsetTop/Left不能获取，需要加上两个父元素的offsetTop/Left才为该div的争取的值
+  var Y = e.pageY - jd_show.offsetTop - jd_dsw.offsetTop;
+  //获得宽高 offsetWidth/Height
+  //得到可移动的距离maskX/Y
+  var maskX = X - mask.offsetWidth / 2;
+  var maskY = Y - mask.offsetHeight / 2;
+  //限制mask移动距离
+  var xzmaskX = jd_sp_im.offsetWidth - mask.offsetWidth;
+  var xzmaskY = jd_sp_im.offsetHeight - mask.offsetHeight;
+  //加入判定条件，设置mask可移动区间
+  if (maskX <= 0) {
+    maskX = 0
+  } else if (maskX >= xzmaskX) {
+    maskX = xzmaskX;
+  }
+  if (maskY <= 0) {
+    maskY = 0
+  } else if (maskY >= xzmaskY) {
+    maskY = xzmaskY;
+  }
+  mask.style.left = maskX + 'px';
+  mask.style.top = maskY + 'px';
+  //计算右侧大图片对应的移动距离 = 遮挡层移动距离 * 大图片最大移动距离 / 遮挡层的最大移动距离
+  //大图片的最大移动距离
+  var bigMax = jd_sp_big_im.offsetWidth - jd_sp_big.offsetWidth;
+  //大图片的移动距离 X /Y
+  var bigX = maskX * bigMax / xzmaskX;
+  var bigY = maskY * bigMax / xzmaskY;
+  jd_sp_big_im.style.left = -bigX + 'px';
+  jd_sp_big_im.style.top = -bigY + 'px';
+})
+// 商品展示窗口下方小图列表触碰效果
+var sp_mini_bk=["10px","85px"]
+// 获取到所有的小图
+var sp_mini_list = document.querySelectorAll(".sp_mini_ce img");
+// 循环注册触碰事件
+for (let i = 0; i < sp_mini_list.length; i++) {
+  sp_mini_list[i].addEventListener("mouseover", function () {})
+}
