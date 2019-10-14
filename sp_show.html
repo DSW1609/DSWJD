@@ -1059,12 +1059,15 @@
     <div class="jd_show">
       <!-- 左侧商品图片 -->
       <div class="jd_sp_im">
-        <img src="images/show_mini_01.jpg" alt="">
+        <img src="images/show_mini_00.jpg" alt="" id="sp_img">
+        <!-- 遮罩层 -->
         <div class="mask"></div>
+        <!-- 右下角方法指示按钮 -->
+        <div class="jd_sp_zs"></div>
       </div>
       <!-- 右侧放大的图片 -->
       <div class="jd_sp_big">
-        <img src="images/show_big_01.jpg" alt="">
+        <img src="images/show_big_00.jpg" alt="">
       </div>
       <!-- 下方小图列表 -->
       <div class="sp_mini_list">
@@ -1078,28 +1081,155 @@
         <!-- 居中图片 -->
         <div class="sp_mini_ce">
           <!-- 边框div -->
-          <div class="sp_mini_bk">
-            
-          </div>
+          <div class="sp_mini_bk"></div>
           <ul>
             <li>
-              <img src="images/sp_mini_01.jpg" alt="">
+              <img src="images/sp_mini_01.jpg" alt="" data-im="0">
             </li>
             <li>
-              <img src="images/sp_mini_02.jpg" alt="">
+              <img src="images/sp_mini_02.jpg" alt="" data-im="1">
             </li>
             <li>
-              <img src="images/sp_mini_03.jpg" alt="">
+              <img src="images/sp_mini_03.jpg" alt="" data-im="2">
             </li>
             <li>
-              <img src="images/sp_mini_04.jpg" alt="">
+              <img src="images/sp_mini_04.jpg" alt="" data-im="3">
             </li>
             <li>
-              <img src="images/sp_mini_05.jpg" alt="">
+              <img src="images/sp_mini_05.jpg" alt="" data-im="4">
             </li>
           </ul>
         </div>
       </div>
+      <!-- 小图下方三个按钮和举报栏 -->
+      <div class="jd_sp_jb">
+        <!-- 左侧三个按钮 -->
+        <div class="sp_jb_l">
+          <!-- 单个按钮 -->
+          <div class="sp_jb_one">
+            <i></i>
+            <span>关注</span>
+          </div>
+          <div class="sp_jb_one sp_jb_one2">
+            <i></i>
+            <span>分享</span>
+          </div>
+          <div class="sp_jb_one sp_jb_one3">
+            <i></i>
+            <span>对比</span>
+          </div>
+        </div>
+        <div class="sp_jb_r">
+          <span>举报</span>
+        </div>
+      </div>
+      <!-- 企业购按钮 -->
+      <div class="jd_sp_qy">
+        <div class="sp_qy_bt">
+          企业购更优惠
+        </div>
+      </div>
+      <!-- 右侧选项窗口开始 -->
+      <div class="sp_menu">
+        <!-- title -->
+        <div class="sp_menu_title">
+          <!-- 新品标签 -->
+          <i>新品</i>
+          <span>
+            Apple iPhone 11 Pro (A2217) 64GB 暗夜绿色 移动联通电信4G手机 双卡双待 </span>
+        </div>
+        <!-- 副标题 -->
+        <div class="sp_menu_tits">
+          <span>【iPhone新品火热开售！】选换修无忧版享官方只换不修服务，选年付版再送爱奇艺会员！</span>
+          <a href="javascript:;">
+            查看更多新品!
+          </a>
+        </div>
+        <div class="sp_menu_tits">
+          <span>换修无忧年付版立减200，官方只换不修！更送一年爱奇艺会员！</span>
+        </div>
+        <!-- 商品价格栏 -->
+        <div class="sp_menu_spr">
+          <!-- 价格 -->
+          <div class="menu_sprice">
+            <span class="sp_jdj">京东价</span>
+            <i>￥</i>
+            <pr>9999.00</pr>
+            <span class="sp_jj">降价通知</span>
+          </div>
+          <!-- 促销 -->
+          <div class="menu_sprice menu_sprice2">
+            <span class="sp_jdj sp_cx">促销</span>
+            <!-- 赠品标签 -->
+            <span class="sp_zp">赠品</span>
+            <!-- 赠品小图 -->
+            <div class="sp_zp_im">
+              <img src="images/sp_show/sp_zp01.jpg" alt="" title="【免费体验】Apple产品“上手无忧”服务">
+              <span class="sp_zp_sl"> × 1</span>
+              <span class="sp_zp_ts">(赠完即止)</span>
+            </div>
+          </div>
+          <!-- 累计评价 -->
+          <div class="menu_pj">
+            <span>累计评价</span>
+            <a href="javascript:;">9.9万+</a>
+          </div>
+        </div>
+        <!-- 增值业务 -->
+        <div class="sp_menu_zz">
+          <span>增值业务</span>
+          <!-- 回收 -->
+          <div class="sp_menu_hs">
+            <i></i>
+            <span title="
+            购买新品时可同步进行闲置物品回收，
+将闲置物品卖了换钱用于消费或提现。">
+              高价回收-卖了换钱
+            </span>
+          </div>
+          <!-- 套餐 -->
+          <div class="sp_menu_hs sp_menu_tc">
+            <i></i>
+            <span title="告别营业厅排队等待，在线变更套餐更快捷更方便。
+还可享受赠话费、赠流量活动，点击查看详情。">
+              3元1G
+            </span>
+          </div>
+        </div>
+        <!-- 配送 -->
+        <div class="sp_menu_ps">
+          <span>配送至</span>
+          <!-- 地址 -->
+          <div class="menu_ps_add">
+            <span>山东济南市历城区彩石镇</span>
+            <i></i>
+          </div>
+          <!-- 右侧其他标签 -->
+          <div class="menu_ps_bq">
+            <span><strong>有货</strong></span>
+            <span>&nbsp;&nbsp;支持</span>
+            <span class="menu_ps_jzd">京尊达</span>
+            <span>|</span>
+            <span class="menu_ps_jzd">京准达</span>
+            <span>|</span>
+            <span class="menu_ps_jzd">211限时达</span>
+            <span>|</span>
+            <span class="menu_ps_jzd">自提</span>
+            <span>|</span>
+            <span class="menu_ps_jzd">99元免基础运费(10kg内)</span>
+          </div>
+          <!-- 下方配送说明 -->
+          <div class="menu_ps_sm">
+            由<span> 京东 </span>发货, 并提供售后服务. 23:54前下单，预计明天(10月15日)送达
+          </div>
+        </div>
+        <!-- 重量 -->
+        <div class="sp_menu_zl">
+          <span>重量</span>
+          <span class="menu_zl_ss">0.5kg</span>
+        </div>
+      </div>
+      <!-- 右侧选项窗口结束 -->
     </div>
     <!-- 商品展示与选项窗口结束 -->
   </div>

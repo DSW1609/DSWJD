@@ -131,10 +131,22 @@ jd_sp_im.addEventListener('mousemove', function (e) {
   jd_sp_big_im.style.top = -bigY + 'px';
 })
 // 商品展示窗口下方小图列表触碰效果
-var sp_mini_bk=["10px","85px"]
+var sp_bk_arr = ["10px", "85px", "160px", "235px", "310px"];
+var sp_mini_bk = document.querySelector(".sp_mini_bk");
+// 获得商品图片
+var sp_img = document.querySelector("#sp_img");
 // 获取到所有的小图
 var sp_mini_list = document.querySelectorAll(".sp_mini_ce img");
 // 循环注册触碰事件
 for (let i = 0; i < sp_mini_list.length; i++) {
-  sp_mini_list[i].addEventListener("mouseover", function () {})
+  sp_mini_list[i].addEventListener("mouseover", function () {
+    // 获取当前触碰的自定义属性
+    var data_im = this.getAttribute("data-im");
+    // 根据自定义属性选取数组内对应的值移动边框到指定位置
+    sp_mini_bk.style.left = sp_bk_arr[data_im];
+    // 更换上方商品图片与下方小图一致
+    sp_img.setAttribute("src", "images/show_mini_0" + data_im + ".jpg");
+    // 更换右侧商品图片与左侧图片一致
+    jd_sp_big_im.setAttribute("src", "images/show_big_0" + data_im + ".jpg");
+  })
 }
