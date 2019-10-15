@@ -150,3 +150,65 @@ for (let i = 0; i < sp_mini_list.length; i++) {
     jd_sp_big_im.setAttribute("src", "images/show_big_0" + data_im + ".jpg");
   })
 }
+// 选择颜色
+var menu_co_o = document.querySelectorAll(".menu_co_o");
+// 选择版本
+var menu_bb_m = document.querySelectorAll(".menu_bb_m");
+// 购买方式
+var menu_buy_m = document.querySelectorAll(".menu_buy_m");
+var menu_buy_m2 = document.querySelector(".menu_buy_m2");
+// 优惠套装
+var menu_tz = document.querySelectorAll(".menu_tz");
+// 增值服务
+var menu_zz = document.querySelectorAll(".menu_zz");
+// 京东服务
+var menu_jd = document.querySelectorAll(".menu_jd");
+// 白条分期
+var menu_bt_m = document.querySelectorAll(".menu_bt_m");
+// 创建数组保存需要进行操作的变量名
+var se_arr = [menu_co_o, menu_bb_m, menu_buy_m, menu_bt_m, menu_tz, menu_zz, menu_jd];
+// 给默认的添加边框
+menu_co_o[0].style.border = "1px solid #e3393c";
+menu_bb_m[1].style.border = "1px solid #e3393c";
+menu_buy_m[0].style.border = "1px solid #e3393c";
+menu_buy_m2.style.border = "1px solid #e3393c";
+// 循环调用点击函数
+for (var i = 0; i < se_arr.length; i++) {
+  se_cl(se_arr[i]);
+}
+// 封装点击事件函数
+function se_cl(obj) {
+  // 循环注册点击事件
+  for (var i = 0; i < obj.length; i++) {
+    obj[i].addEventListener("click", function () {
+      // 清空所有的边框
+      for (var i = 0; i < obj.length; i++) {
+        obj[i].style.border = "";
+      }
+      // 点击谁给谁添加边框
+      this.style.border = "1px solid #e3393c";
+    })
+  }
+}
+// 商品数量加减
+var menu_in = document.querySelector(".menu_in");
+var menu_jia = document.querySelector(".menu_jia");
+var menu_jian = document.querySelector(".menu_jian");
+// 添加默认样式
+menu_jian.style.opacity = "0.6";
+menu_jian.style.cursor = "auto";
+// 注册点击加号事件
+menu_jia.addEventListener("click", function () {
+  menu_in.value++;
+  menu_jian.style.opacity = "1";
+})
+menu_jian.addEventListener("click", function () {
+  if (menu_in.value <= 2) {
+    menu_in.value = 1;
+    menu_jian.style.opacity = "0.6";
+    menu_jian.style.cursor = "auto";
+  } else {
+    menu_in.value--;
+    menu_jian.style.cursor = "pointer";
+  }
+})
