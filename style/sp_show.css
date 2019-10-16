@@ -3,9 +3,10 @@
 }
 
 .jd_dsw {
-  height: 2000px;
+  height: auto;
   background: #fff;
   overflow: hidden;
+  user-select: none;
 }
 
 .jd_cart {
@@ -301,7 +302,6 @@
   height: 785px;
   margin: 0 auto;
   top: 10px;
-  user-select: none;
 }
 
 .jd_sp_im {
@@ -1055,4 +1055,270 @@
 
 .tab_cli span {
   color: #fff;
+}
+
+.show_pj_qh {
+  position: absolute;
+  width: 1190px;
+  height: 217px;
+  background: #fff;
+  margin-top: 40px;
+}
+
+.pj_phone {
+  position: relative;
+  float: left;
+  width: 144px;
+  height: 161px;
+  top: 20px;
+}
+
+.pj_phone_im {
+  position: relative;
+  width: 144px;
+  height: 100px;
+}
+
+.pj_phim {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.pj_phpl {
+  position: relative;
+  float: right;
+  width: 23px;
+  height: 23px;
+  right: 8px;
+  top: 38px;
+}
+
+.pj_phone_tit {
+  position: relative;
+  width: 150px;
+  height: 36px;
+  overflow: hidden;
+  line-height: 18px;
+  color: #333;
+  font-size: 12px;
+  top: 5px;
+}
+
+.pj_list {
+  position: absolute;
+  width: 805px;
+  height: 161px;
+  left: 145px;
+  top: 20px;
+  margin-left: 20px;
+  display: none;
+}
+
+.pj_list_jtl {
+  position: relative;
+  float: left;
+  width: 23px;
+  height: 73px;
+  top: 20px;
+  background: url(../images/sp_show/page-btn.png) -94px -94px no-repeat;
+}
+
+.pj_list_jtr {
+  float: right;
+  background: url(../images/sp_show/page-btn.png)-94px 0 no-repeat;
+}
+
+.pj_list_body {
+  position: relative;
+  width: 720px;
+  height: 161px;
+  margin: 0 auto;
+}
+
+.pj_phone_tit2 {
+  width: 120px;
+}
+
+.pj_phone2 {
+  top: 0;
+  left: 12px;
+}
+
+.pj_list_pr {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  margin-top: 8px;
+  line-height: 20px;
+  color: #e4393c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pj_list_pr i {
+  font-style: normal;
+  font-size: 14px;
+  margin-left: 16px;
+}
+
+.pj_list_ckb {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 4px;
+  left: 3px;
+}
+
+.pj_list_pr span {
+  position: relative;
+  left: -5px;
+}
+
+.pj_pr {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 138px;
+  margin-top: 20px;
+}
+
+.pj_pr_d {
+  position: relative;
+  float: left;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sp_show/pj_d.png) no-repeat;
+  top: 38px;
+}
+
+.pj_pr_se {
+  position: relative;
+  float: right;
+  width: 160px;
+  height: 25px;
+  font-size: 12px;
+  color: #333;
+  top: 22px;
+}
+
+.pj_pr_se i {
+  font-style: normal;
+  font-size: 20px;
+  color: #df3033;
+  font-weight: bold;
+}
+
+.pj_buy {
+  position: relative;
+  float: right;
+  width: 90px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 35px;
+  right: 70px;
+  background: #df3033;
+  cursor: pointer;
+}
+
+.pj_xg {
+  position: absolute;
+  width: 90px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #666;
+  font-size: 12px;
+  margin-top: 122px;
+  margin-left: 40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.jd_para {
+  position: relative;
+  width: 1190px;
+  height: 3000px;
+  margin: 0 auto;
+}
+
+.jd_aside {
+  position: absolute;
+  width: 210px;
+  height: 3000px;
+}
+
+.as_search {
+  position: relative;
+  width: 210px;
+  height: 140px;
+  border: 1px solid #eeeeee;
+}
+
+.as_serch_tit {
+  position: relative;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  background: #f7f7f7;
+  font-size: 13px;
+  text-indent: 12px;
+}
+
+.as_gjz {
+  position: relative;
+  width: 150px;
+  height: 26px;
+  margin: 0 auto;
+  top: 3px;
+  line-height: 26px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.as_in {
+  position: relative;
+  float: right;
+  top: 3px;
+  width: 100px;
+  height: 22px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.as_in2 {
+  position: absolute;
+  width: 40px;
+  left: 50px;
+}
+
+.as_d {
+  position: relative;
+  left: 43.5px;
+}
+
+.as_inr {
+  margin-left: 60px;
+}
+
+.as_bt {
+  position: relative;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 auto;
+  top: 10px;
+  cursor: pointer;
 }

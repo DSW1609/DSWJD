@@ -201,6 +201,7 @@ menu_jian.style.cursor = "auto";
 menu_jia.addEventListener("click", function () {
   menu_in.value++;
   menu_jian.style.opacity = "1";
+  menu_jian.style.cursor = "pointer";
 })
 menu_jian.addEventListener("click", function () {
   if (menu_in.value <= 2) {
@@ -209,6 +210,54 @@ menu_jian.addEventListener("click", function () {
     menu_jian.style.cursor = "auto";
   } else {
     menu_in.value--;
-    menu_jian.style.cursor = "pointer";
   }
 })
+// 配件tab栏切换事件
+var pj_tab_one = document.querySelectorAll(".pj_tab_one");
+var pj_list = document.querySelectorAll(".pj_list");
+// 循环注册点击事件
+for (let i = 0; i < pj_tab_one.length; i++) {
+  pj_tab_one[i].addEventListener("click", function () {
+    // 首先清楚所有的点击的class样式并隐藏下方的内容
+    for (let i = 0; i < pj_tab_one.length; i++) {
+      pj_tab_one[i].classList.remove("tab_cli");
+      pj_list[i].style.display = "none";
+    }
+    // 点击谁给谁添加class样式
+    this.classList.add("tab_cli");
+    // 获取自定义属性
+    var data_pj = this.getAttribute("data-pj");
+    // 根据自定义属性显示对应的下方内容
+    pj_list[data_pj].style.display = "block";
+  })
+}
+// 配件价格计算部分
+// 获取到所有的配件的单选框
+var pj_list_ckb = document.querySelectorAll(".pj_list_ckb");
+// 获取到所有的配件价格
+var pj_jg = document.querySelectorAll(".pj_jg");
+// 获取到选择配件数量的span
+var pj_num = document.querySelector("#pj_num");
+// 获取到总价格的span
+var pj_zj = document.querySelector("#pj_zj");
+// 定义选择配件数量的初始值
+var sl_num = 0;
+// 定义总价的初始值
+var all_zj = 9999.00;
+// 循环注册点击事件
+for (let i = 0; i < pj_list_ckb.length; i++) {
+  pj_list_ckb[i].addEventListener("click", function () {
+    // 获取到多选框的自定义属性
+    var data_ckb = this.getAttribute("data-ckb");
+    if (this.checked) {
+      sl_num++;
+      all_zj += pj_jg[data_ckb].innerHTML * 1;
+    } else {
+      sl_num--;
+      all_zj -= pj_jg[data_ckb].innerHTML * 1;
+    }
+    pj_num.innerHTML = sl_num;
+    // toFixed(解决js浮点计算的精确度问题,保留两位小数)
+    pj_zj.innerHTML = all_zj.toFixed(2);
+  })
+}
