@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MicroSoft Yahei";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.ms_header {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.ms_header_cen {
+  position: relative;
+  width: 1190px;
+  height: 150px;
+  margin: 0 auto;
+  top: 10px;
+}
+
+.ms_header_logo {
+  position: absolute;
+  width: 134px;
+  height: 42px;
+  background-image: url(../images/jd_ms_logo.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  top: 10px;
+}
+
+.ms_header_search {
+  position: relative;
+  width: 540px;
+  height: 36px;
+  background: #fff;
+  margin: 0 auto;
+  top: 15px;
+  border: 2px solid #e01222;
+}
+
+.ms_header_search_i {
+  position: absolute;
+  width: 460px;
+  height: 34px;
+  background: #fff;
+  font-size: 16px;
+  top: 1px;
+  left: 5px;
+}
+
+.ms_header_search_in {
+  width: 460px;
+  height: 34px;
+  border: none;
+  outline: none;
+}
+
+.ms_header_search_b {
+  position: absolute;
+  width: 80px;
+  height: 36px;
+  background: #e01222;
+  left: 460px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.ms_header_sctot {
+  position: relative;
+  width: 540px;
+  height: 22px;
+  margin: 0 auto;
+  top: 15px;
+  left: -6px;
+}
+
+.ms_header_sctot a {
+  color: #999;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.ms_header_sctot a:hover {
+  color: #e01222;
+}
+
+.jd_cart {
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  top: 17px;
+  left: 950px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+}
+
+.jd_cart img {
+  position: absolute;
+  width: 16px;
+  top: 9px;
+  left: 17px;
+}
+
+.jd_cart a {
+  position: absolute;
+  font-size: 12px;
+  color: #e01222;
+  top: 9px;
+  left: 45px;
+  font-weight: 500;
+}
+
+.jd_cart span {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  left: 25px;
+  top: 2px;
+  padding: 0 6px;
+  font-size: 10px;
+  border-radius: 10px;
+  background: #e01222;
+}
+
+.ms_header_navb {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  z-index: 999;
+  top: 115px;
+  background: #fff;
+  border-bottom: 2px solid #e01222;
+}
+
+.ms_header_nav {
+  position: relative;
+  width: 1190px;
+  height: 44px;
+  bottom: 0px;
+  margin: 0 auto;
+}
+
+.ms_header_nav_item {
+  position: relative;
+  float: left;
+  width: 105px;
+  height: 44px;
+  text-align: center;
+}
+
+.ms_header_nav_item a {
+  color: #000;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 18px;
+}
+
+.ms_header_nav_item a:hover {
+  color: #e01222;
+  transition: 0.1s;
+}
+
+.ms_header_more {
+  position: absolute;
+  width: 72px;
+  height: 23px;
+  bottom: 5px;
+  left: 1000px;
+  font-size: 14px;
+  color: #666;
+  background-image: url(../images/ms_xl.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.ms_header_more:hover {
+  color: #e01222;
+}

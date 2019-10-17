@@ -1243,14 +1243,14 @@
 .jd_para {
   position: relative;
   width: 1190px;
-  height: 4000px;
+  height: 3000px;
   margin: 0 auto;
 }
 
 .jd_aside {
   position: absolute;
   width: 210px;
-  height: 4000px;
+  height: 3000px;
 }
 
 .as_search {
@@ -1393,16 +1393,18 @@
   top: 20px;
 }
 
-.as_hot_tab {
+.as_hot_tab,
+.as_new_tab {
   position: relative;
   width: 210px;
   height: 38px;
   background: #f7f7f7;
   border-bottom: 1px solid #e4393c;
 }
-
-.as_hot_tit,
-.as_new_tit {
+.as_new_tab{
+  width: 100%;
+}
+.as_hot_tit {
   position: relative;
   float: left;
   width: 105px;
@@ -1414,18 +1416,13 @@
   cursor: pointer;
 }
 
-.as_new_tit {
-  text-align: left;
-  text-indent: 13px;
-  font-weight: bold;
-}
-
 .as_hot_tit:hover {
   color: #e22929;
 }
 
 .as_hot_red {
   background: #e4393c;
+
 }
 
 .as_hot_red span {
@@ -1526,24 +1523,4 @@
 
 .as_new {
   top: 1550px;
-}
-
-.as_new_prc {
-  position: relative;
-  float: left;
-  left: -3px;
-  top: 28px;
-}
-
-.as_new_one {
-  height: 230px;
-  top: -10px;
-}
-
-.jd_detail {
-  position: absolute;
-  width: 965px;
-  height: 3900px;
-  background: black;
-  left: 225px;
 }
