@@ -310,3 +310,47 @@ for (let i = 0; i < as_hot_tit.length; i++) {
     as_hot_list[data_ashot].style.display = "block";
   })
 }
+// 右侧参数tab栏事件
+// 获取tab栏
+var jd_dt_tab = document.querySelector(".jd_dt_tab");
+// 获取全部tab点击按钮
+var de_item = document.querySelectorAll(".de_item");
+// 获取全部对应的内容div
+var dt_tab_body = document.querySelectorAll(".dt_tab_body");
+// 注册窗口滚动事件当滚动到某个位置时切换tab栏为浮动
+window.addEventListener("scroll", function () {
+  if (this.pageYOffset >= 1365) {
+    jd_dt_tab.classList.add("dt_tab");
+  } else {
+    jd_dt_tab.classList.remove("dt_tab");
+  }
+})
+// 循环注册点击事件
+for (let i = 0; i < de_item.length; i++) {
+  de_item[i].addEventListener("click", function () {
+    // 如果大于1365，跳回这部分的顶部
+    if (window.pageYOffset >= 1365) {
+      window.scroll(0, 1365);
+    }
+    // 首先清空所有的点击样式
+    for (let i = 0; i < de_item.length; i++) {
+      de_item[i].classList.remove("de_item_red");
+    }
+    // 点击谁给谁添加点击样式
+    this.classList.add("de_item_red");
+    // 获取当前点击的自定义属性
+    var data_de = this.getAttribute("data-de");
+    // 首先显示所有内容
+    for (let i = 0; i < dt_tab_body.length; i++) {
+      dt_tab_body[i].style.display = "block";
+    }
+    // 点击谁隐藏他之前的所有内容
+    for (let i = 0; i < data_de; i++) {
+      dt_tab_body[i].style.display = "none";
+    }
+    // 如果点击的第一个按钮，隐藏规格和包装这一部分
+    if (data_de == 0) {
+      dt_tab_body[1].style.display = "none";
+    }
+  })
+}
