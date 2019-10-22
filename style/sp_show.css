@@ -1868,10 +1868,120 @@
 .tab_pj_list {
   position: relative;
   width: 950px;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   margin-top: 20px;
 }
-.tab_pj_item{
-  
+
+.tab_pj_item {
+  position: relative;
+  width: 950px;
+  height: 140px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tab_tx {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 60px;
+}
+
+.tab_tx_im {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #eee;
+  border-radius: 18px;
+}
+
+.tab_tx_im img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  border-radius: 18px;
+}
+
+.tab_name {
+  position: absolute;
+  width: 50px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  color: #333;
+  left: 45px;
+}
+
+.tab_pj_te {
+  position: relative;
+  float: right;
+  width: 760px;
+  height: 140px;
+}
+
+.tab_pj_te span {
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+}
+
+.tab_pj_te em,
+.tab_pj_te time {
+  position: relative;
+  top: 15px;
+  font-size: 12px;
+  color: #999;
+  font-style: normal;
+}
+
+.tab_pj_te time {
+  top: 25px;
+}
+
+.tab_pj_te>i {
+  display: inline-block;
+  width: 78px;
+  height: 14px;
+  background-image: url(../images/sp_show/star.png);
+  background-position: -32px 0;
+}
+
+.tab_cz {
+  position: relative;
+  float: right;
+  width: 150px;
+  height: 30px;
+  bottom: -45px;
+}
+
+.tab_cz_1 {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 30px;
+}
+
+.tab_cz_1 span {
+  font-size: 12px;
+  color: #666;
+  float: right;
+}
+
+.tab_z {
+  position: relative;
+  float: right;
+  right: 5px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sp_show/tab_jl2.png);
+  background-position: -32px -34px;
+}
+
+.tab_h {
+  background-position: -48px -34px;
 }
